@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Comprehensive Port Hub: Your go-to source for information about ports worldwide.">
+    <meta name="description" content="The Comprehensive Port Hub: A website for industry professionals, researchers, students, and shipping enthusiasts. Explore major ports, news, resources, and more.">
+    <meta name="keywords" content="Ports, Shipping, Trade, News, Resources">
     <title>The Comprehensive Port Hub</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -12,8 +13,8 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>The Comprehensive Port Hub</h1>
+        <div class="header-container">
+            <h1 class="site-title">The Comprehensive Port Hub</h1>
             <nav>
                 <ul>
                     <li><a href="#about"><i class="fas fa-info-circle"></i> About Ports</a></li>
@@ -31,13 +32,16 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5ff6c5336c885a268148bdcc/1624626618725-WGLPPSYB99236NZ3JN6G/timelab-pro-yx20mpDyr2I-unsplash.jpg" alt="Port View" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1522281125315-62c5e1ac6795?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MDF8MHwxfGFsbHwxfHx8fHx8fHwxNjEyMTYyMzU1&ixlib=rb-1.2.1&q=80&w=800" alt="Port Image 1">
+                    <div class="image-caption">Explore the world’s largest ports</div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://www.mmcports.com.my/wp-content/uploads/2022/10/Penang-Port-Banner-scaled.jpeg" alt="Penang Port" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1516641227238-301c58b5c2e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MDF8MHwxfGFsbHwxfHx8fHx8fHwxNjEyMTYyMzU1&ixlib=rb-1.2.1&q=80&w=800" alt="Port Image 2">
+                    <div class="image-caption">Connecting continents through trade</div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="https://wavesight.com/wp-content/uploads/2021/03/portindia-1600x800-1.jpg" alt="Port of India" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1531989653141-098d5b2c20e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3MDF8MHwxfGFsbHwxfHx8fHx8fHwxNjEyMTYyMzU1&ixlib=rb-1.2.1&q=80&w=800" alt="Port Image 3">
+                    <div class="image-caption">Innovation in port technology</div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -47,82 +51,72 @@
 
         <!-- About Section -->
         <section id="about" data-aos="fade-up">
-            <div class="container">
-                <h2>About Ports</h2>
-                <p>Ports play a crucial role in global trade, serving as key locations for the transfer of goods between land and sea. This section provides an overview of different types of ports and their significance in the economy.</p>
+            <h2>About Ports</h2>
+            <p>Ports are vital to global trade, providing essential services that facilitate the movement of goods and passengers worldwide. They serve as crucial gateways for imports and exports, connecting businesses and consumers across the globe. In this section, we explore the different types of ports and their unique functions.</p>
+            <div class="about-details">
+                <h3>Key Port Types:</h3>
+                <ul>
+                    <li>Cargo Ports: Handling goods and freight.</li>
+                    <li>Passenger Ports: Serving travelers and tourism.</li>
+                    <li>Specialized Ports: Catering to unique needs (e.g., fishing ports).</li>
+                </ul>
             </div>
         </section>
 
-        <!-- Port Directory Section with Filter -->
+        <!-- Port Directory Section -->
         <section id="directory" data-aos="fade-up">
-            <div class="container">
-                <h2>Port Directory</h2>
-                <input type="text" id="portFilter" placeholder="Filter ports by name..." aria-label="Filter ports by name">
-                <ul id="portList">
-                    <li class="port-item" data-aos="fade-up">Port of Los Angeles</li>
-                    <li class="port-item" data-aos="fade-up">Port of Shanghai</li>
-                    <li class="port-item" data-aos="fade-up">Port of Rotterdam</li>
-                    <li class="port-item" data-aos="fade-up">Port of Singapore</li>
-                </ul>
-            </div>
+            <h2>Port Directory</h2>
+            <p>Search through our global port directory to find detailed information on major ports around the world.</p>
+            <input type="text" id="portFilter" placeholder="Filter ports by name...">
+            <ul id="portList">
+                <li class="port-item" data-aos="fade-up">Port of Los Angeles</li>
+                <li class="port-item" data-aos="fade-up">Port of Shanghai</li>
+                <li class="port-item" data-aos="fade-up">Port of Rotterdam</li>
+                <li class="port-item" data-aos="fade-up">Port of Singapore</li>
+            </ul>
         </section>
 
         <!-- News Section -->
         <section id="news" data-aos="fade-up">
-            <div class="container">
-                <h2>News & Updates</h2>
-                <article class="news-item">
-                    <h3>Latest Developments in the Port Industry</h3>
-                    <p>Stay updated with the latest developments in the port industry, shipping trends, and upcoming events.</p>
-                </article>
-                <article class="news-item">
-                    <h3>Port of Los Angeles Expands Facilities</h3>
-                    <p>The Port of Los Angeles has announced a new initiative to expand its facilities to accommodate larger vessels.</p>
-                </article>
-            </div>
+            <h2>News & Updates</h2>
+            <article>
+                <h3>Global Shipping Trends in 2024</h3>
+                <p>Stay informed about the latest shipping trends impacting the global economy in 2024... <a href="#" class="read-more">Read More</a></p>
+            </article>
+            <article>
+                <h3>New Developments in Port Technology</h3>
+                <p>Explore the advancements in port technologies that enhance efficiency and security... <a href="#" class="read-more">Read More</a></p>
+            </article>
         </section>
 
         <!-- Resources Section -->
         <section id="resources" data-aos="fade-up">
-            <div class="container">
-                <h2>Resources</h2>
-                <p>Access guides, infographics, and research papers related to ports and shipping.</p>
-                <ul class="resource-list">
-                    <li><a href="#">Port Management Guide (PDF)</a></li>
-                    <li><a href="#">Shipping Industry Trends 2024 (Infographic)</a></li>
-                </ul>
+            <h2>Resources</h2>
+            <p>Access valuable reports, guides, and industry publications for insights into port management and shipping practices.</p>
+            <div class="resource-list">
+                <a href="#" class="resource-item"><i class="fas fa-file-download"></i> Port Management Guide</a>
+                <a href="#" class="resource-item"><i class="fas fa-file-download"></i> Global Shipping Report 2024</a>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" data-aos="fade-up">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 The Comprehensive Port Hub</p>
-            <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+        <p>&copy; 2024 The Comprehensive Port Hub. All rights reserved.</p>
     </footer>
 
+    <!-- External Scripts -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script src="script.js"></script>
