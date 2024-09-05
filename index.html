@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Comprehensive Port Hub: Your go-to source for information about ports worldwide.">
+    <title>The Comprehensive Port Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The Comprehensive Port Hub</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Ports</a></li>
+                    <li><a href="#directory"><i class="fas fa-ship"></i> Port Directory</a></li>
+                    <li><a href="#news"><i class="fas fa-newspaper"></i> News & Updates</a></li>
+                    <li><a href="#resources"><i class="fas fa-book"></i> Resources</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Swiper Slider -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5ff6c5336c885a268148bdcc/1624626618725-WGLPPSYB99236NZ3JN6G/timelab-pro-yx20mpDyr2I-unsplash.jpg" alt="Port View" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://www.mmcports.com.my/wp-content/uploads/2022/10/Penang-Port-Banner-scaled.jpeg" alt="Penang Port" loading="lazy">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://wavesight.com/wp-content/uploads/2021/03/portindia-1600x800-1.jpg" alt="Port of India" loading="lazy">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" data-aos="fade-up">
+            <div class="container">
+                <h2>About Ports</h2>
+                <p>Ports play a crucial role in global trade, serving as key locations for the transfer of goods between land and sea. This section provides an overview of different types of ports and their significance in the economy.</p>
+            </div>
+        </section>
+
+        <!-- Port Directory Section with Filter -->
+        <section id="directory" data-aos="fade-up">
+            <div class="container">
+                <h2>Port Directory</h2>
+                <input type="text" id="portFilter" placeholder="Filter ports by name..." aria-label="Filter ports by name">
+                <ul id="portList">
+                    <li class="port-item" data-aos="fade-up">Port of Los Angeles</li>
+                    <li class="port-item" data-aos="fade-up">Port of Shanghai</li>
+                    <li class="port-item" data-aos="fade-up">Port of Rotterdam</li>
+                    <li class="port-item" data-aos="fade-up">Port of Singapore</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" data-aos="fade-up">
+            <div class="container">
+                <h2>News & Updates</h2>
+                <article class="news-item">
+                    <h3>Latest Developments in the Port Industry</h3>
+                    <p>Stay updated with the latest developments in the port industry, shipping trends, and upcoming events.</p>
+                </article>
+                <article class="news-item">
+                    <h3>Port of Los Angeles Expands Facilities</h3>
+                    <p>The Port of Los Angeles has announced a new initiative to expand its facilities to accommodate larger vessels.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" data-aos="fade-up">
+            <div class="container">
+                <h2>Resources</h2>
+                <p>Access guides, infographics, and research papers related to ports and shipping.</p>
+                <ul class="resource-list">
+                    <li><a href="#">Port Management Guide (PDF)</a></li>
+                    <li><a href="#">Shipping Industry Trends 2024 (Infographic)</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" data-aos="fade-up">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 The Comprehensive Port Hub</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
